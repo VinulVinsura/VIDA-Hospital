@@ -2,18 +2,18 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   namespace: vida-prod
-  name: demo-nginx-site-ingress
+  name: vida-ui-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: demo.com
+  - host: vida.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: demo-nginx-site-service
+            name: vida-ui-service
             port:
               number: 8080
