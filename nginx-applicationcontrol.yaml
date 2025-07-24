@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo-nginx-ui-v2
+  name: vida-ui-application
   namespace: argocd
 
 spec: 
   project: vida-prod
 
   source:
-    repoURL: 'https://github.com/VinulVinsura/Argocd-demo.git'
+    repoURL: 'https://github.com/VinulVinsura/VIDA-Hospital.git'
     targetRevision: main            # Git branch, tag, or commit SHA
     path: PROD                 # Folder in repo with K8s YAMLs or Helm chart
 
