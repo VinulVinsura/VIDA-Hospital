@@ -4,7 +4,7 @@ metadata:
   name: vida-ui-deployment
   namespace: vida-prod
 spec:
-  replicas: 2
+ # replicas: 2
   selector:
     matchLabels:
       app: vida-ui
